@@ -1,0 +1,27 @@
+.separationRight::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 65%;
+  border-right: 1px solid #0474b1;
+}
+
+@media (max-width: 768px) {
+  .separationRight::after {
+    display: none;
+  }
+}
+
+.separationLeft::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 65%;
+  border-left: 1px solid #0474b1;
+}
+
+@media (max-width: 768px) {
+  .separationLeft::after {
+    display: none;
+  }
+}

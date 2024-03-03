@@ -1,20 +1,27 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      textColor: {
+        principal: '#0474B1',
+        secondary: '#FBFCFB'
       },
-    },
+      backgroundColor: {
+        principal: '#0474B1',
+        secondary: '#FBFCFB',
+        page: '#88B3C9'
+      },
+      borderColor: {
+        principal: '#0474B1'
+      }
+    }
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require('@midudev/tailwind-animations')]
+}
+export default config
