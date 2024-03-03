@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       textColor: {
         principal: '#0474B1',
-        secondary: '#FBFCFB'
+        secondary: '#FBFCFB',
+        tertiary: '#A9B6C9'
       },
       backgroundColor: {
         principal: '#0474B1',

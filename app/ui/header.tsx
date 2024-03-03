@@ -16,7 +16,7 @@ export default function Header() {
         </div>
         <div>
           <h1 className='text-3xl font-bold text-principal'>Nuestro refugio</h1>
-          <span className='text-sm font-bold text-gray-400'>
+          <span className='text-sm font-bold text-tertiary'>
             Hogar gerontogeriátrico
           </span>
         </div>

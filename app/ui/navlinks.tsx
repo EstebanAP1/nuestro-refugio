@@ -39,7 +39,7 @@ export default function NavLinks() {
               className={`${styles.navlink} ${
                 pathname === link.href
                   ? 'text-principal  '
-                  : 'md:text-secondary text-gray-400'
+                  : 'md:text-secondary text-tertiary'
               } font-semibold md:text-lg`}
               href={link.href}>
               {link.name}
