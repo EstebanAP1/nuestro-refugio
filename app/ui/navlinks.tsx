@@ -41,7 +41,8 @@ export default function NavLinks() {
                   ? 'text-principal  '
                   : 'md:text-secondary text-tertiary'
               } font-semibold md:text-lg`}
-              href={link.href}>
+              href={link.href}
+              aria-description={`Link hacia la sección ${link.name} en Nuestro refugio`}>
               {link.name}
             </Link>
           </li>

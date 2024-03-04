@@ -3,19 +3,27 @@ import styles from '@/app/ui/css/inicio.module.css'
 
 export default function Home() {
   return (
-    <main className='w-full h-full grid md:grid-cols-2'>
-      <div className='flex flex-col md:justify-center items-start w-full md:h-screen py-8 px-4 md:pl-20 md:pr-20 gap-1 md:gap-5'>
-        <h1 className='text-3xl md:text-5xl text-principal font-bold'>
+    <main className='relative w-full h-full grid md:grid-cols-2'>
+      <div className='flex flex-col md:justify-center items-start w-full md:h-screen py-8 px-4 md:pl-24 gap-1 md:gap-5'>
+        <h1 className='text-3xl md:text-6xl text-principal font-bold'>
           Nuestra experiencia
         </h1>
-        <p className='text-secondary text-lg'>
+        <p className='text-secondary text-lg md:text-2xl text-pretty'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
           rerum iusto nemo nihil minima tempore, eius, vero enim alias
           laudantium unde impedit repellendus modi eos ut maiores quisquam
           accusamus at.
         </p>
       </div>
-      <div className='border p-10 w-full md:h-screen'></div>
+      <div className='flex justify-center items-center w-full md:h-screen'>
+        <Image
+          src={'/inicio/ancianos.png'}
+          alt='Pareja de ancianos sonriendo.'
+          width={400}
+          height={400}
+          quality={100}
+        />
+      </div>
       <div
         className={`flex flex-col justify-center items-center p-10 md:py-28 w-full md:h-screen gap-1 md:gap-4 ${styles.separationRight}`}>
         <h1 className='text-2xl md:text-4xl text-principal font-bold'>
@@ -54,6 +62,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Image
+        src={'/inicio/circulo.webp'}
+        alt='Circulo de fondo'
+        width={340}
+        height={340}
+        quality={100}
+        className='absolute aspect-square -left-[100px] top-[35%] md:top-[75%] -z-10'
+      />
     </main>
   )
 }
